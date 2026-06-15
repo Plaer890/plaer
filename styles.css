@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.5;
+}
+
+.header {
+  background: linear-gradient(135deg, #1e2a3e, #0f172a);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.post-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.post-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.1);
+}
+
+.post-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 1.5rem;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.post-date {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.post-summary {
+  color: #495057;
+  margin-bottom: 1.2rem;
+}
+
+.read-more {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.read-more:hover {
+  background: #2563eb;
+}
+
+/* Модальное окно */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  max-width: 700px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+  border-radius: 1rem;
+  padding: 2rem;
+  position: relative;
+  animation: fadeInUp 0.3s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #6c757d;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #e9ecef;
+  margin-top: 2rem;
+  color: #495057;
+}
