@@ -101,3 +101,5 @@ function closeModal() {
 document.addEventListener('DOMContentLoaded', renderPosts);
 
 //<p>Это изменение сделал Матюхин В.Н. для коммита</p>
+//<p>Это изменение сделал Матюхин В.Н. для коммита</p>
+//<p>Это изменение сделал Матюхин В.Н. для коммита</p>
