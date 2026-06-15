@@ -99,3 +99,5 @@ function closeModal() {
 
 // Запускаем рендер после загрузки страницы
 document.addEventListener('DOMContentLoaded', renderPosts);
+
+//<p>Это изменение сделал Матюхин В.Н. для коммита</p>
